@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/pedroteixeira/.nvm/v0.10.33/bin/node',
+1 verbose cli   '/Users/pedroteixeira/.nvm/v0.10.33/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'level',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 error Error: Invalid name: "Test app"
+4 error     at ensureValidName (/Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:315:15)
+4 error     at Object.module.exports.fixNameField (/Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:204:5)
+4 error     at /Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
+4 error     at Array.forEach (native)
+4 error     at normalize (/Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
+4 error     at final (/Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
+4 error     at then (/Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
+4 error     at /Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/read-package-json/read-json.js:316:48
+4 error     at evalmachine.<anonymous>:207:20
+4 error     at OpenReq.Req.done (/Users/pedroteixeira/.nvm/v0.10.33/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:141:5)
+5 error If you need help, you may report this *entire* log,
+5 error including the npm and node versions, at:
+5 error     <http://github.com/npm/npm/issues>
+6 error System Darwin 14.0.0
+7 error command "/Users/pedroteixeira/.nvm/v0.10.33/bin/node" "/Users/pedroteixeira/.nvm/v0.10.33/bin/npm" "i" "level" "--save"
+8 error cwd /Users/pedroteixeira/projects/nodejs-patterns-book/code/08/level
+9 error node -v v0.10.33
+10 error npm -v 1.4.28
+11 verbose exit [ 1, true ]

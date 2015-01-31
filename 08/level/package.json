@@ -1,0 +1,9 @@
+{
+  "name": "test-app",
+  "version": "0.1.0",
+  "dependencies": {
+    "cuid": "^1.2.4",
+    "level": "^0.18.0",
+    "level-sublevel": "^6.4.0"
+  }
+}

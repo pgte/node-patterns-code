@@ -1,0 +1,37 @@
+## create root key and certificate
+
+$ mkdir root
+$ cd root
+$ openssl genrsa -out private-key.pem 2048
+$ openssl req   -x509   -new   -nodes   -key private-key.pem   -days 1024   -out certificate.pem   -subj "/C=US/ST=Utah/L=Provo/O=ACME Signing Authority Inc/CN=example.com"
+
+
+## create server key
+
+$ cd ..
+$ mkdir server
+$ cd server
+$ openssl genrsa -out private-key.pem 2048
+
+## create server CSR
+
+$ openssl req -new -key private-key.pem -out csr.pem -subj "/C=US/ST=Utah/L=Provo/O=ACME Tech Inc/CN=localhost"
+
+## sign CSR
+
+$ openssl x509 -req -in csr.pem -CA ../root/certificate.pem -CAkey ../root/private-key.pem -CAcreateserial -out certificate.pem -days 500
+
+## create client key
+
+$ cd ..
+$ mkdir client-001
+$ cd client-001
+$ openssl genrsa -out private-key.pem 2048
+
+## create client CSR
+
+$ openssl req -new -key private-key.pem -out csr.pem -subj "/C=US/ST=Utah/L=Provo/O=ACME Tech Inc/CN=fridge-client-001"
+
+## sign CSR
+
+$ openssl x509 -req -in csr.pem -CA ../root/certificate.pem -CAkey ../root/private-key.pem -CAcreateserial -out certificate.pem -days 500

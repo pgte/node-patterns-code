@@ -1,0 +1,1 @@
+modules.require('a');

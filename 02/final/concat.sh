@@ -1,0 +1,1 @@
+cat modules.js cache.js currency.js app.js > all.js

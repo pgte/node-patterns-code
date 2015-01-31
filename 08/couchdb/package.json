@@ -1,0 +1,14 @@
+{
+  "name": "node-patterns-couchdb-examples",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "^0.9.0",
+    "boom": "^2.6.1",
+    "deep-equal": "^0.2.1",
+    "follow": "^0.11.4",
+    "joi": "^5.1.0",
+    "nano": "^6.0.2",
+    "object-versions": "^1.0.0",
+    "sortedlist": "^0.3.1"
+  }
+}

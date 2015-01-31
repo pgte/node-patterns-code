@@ -1,0 +1,7 @@
+{
+  "name": "test-app",
+  "version": "0.1.0",
+  "dependencies": {
+    "follow": "^0.11.4"
+  }
+}

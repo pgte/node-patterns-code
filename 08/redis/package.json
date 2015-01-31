@@ -1,0 +1,9 @@
+{
+  "name": "redis-code",
+  "version": "0.0.1",
+  "description": "Redis code examples",
+  "dependencies": {
+    "cuid": "^1.2.4",
+    "redis": "^0.12.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "05-redis_queue",
+  "version": "0.1.0",
+  "dependencies": {
+    "request": "^2.36.0",
+    "simple-redis-safe-work-queue": "^1.0.3"
+  }
+}

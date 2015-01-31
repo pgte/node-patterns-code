@@ -1,0 +1,1 @@
+cat modules.js a.js b.js c.js app.js > all.js

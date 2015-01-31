@@ -1,0 +1,8 @@
+{
+  "name": "05-persisted_queue",
+  "version": "0.1.0",
+  "dependencies": {
+    "level": "^0.18.0",
+    "level-jobs": "^0.4.2"
+  }
+}

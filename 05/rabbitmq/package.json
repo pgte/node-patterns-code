@@ -1,0 +1,7 @@
+{
+  "name": "05-amqp_queue",
+  "version": "0.1.0",
+  "dependencies": {
+    "amqplib": "^0.3.0"
+  }
+}
